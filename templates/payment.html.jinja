@@ -1,0 +1,89 @@
+{% extends "partials/base1.jinja" %}
+{% block title %}Payment - Hotel Booking App{% endblock %}
+{% block content %}
+
+    <!-- Title -->
+    <div class="container mt-3">
+        <h3>Payment Method</h3>
+    </div>
+
+    <!-- Divider -->
+    <div class="container">
+        <hr>
+    </div>
+
+    <!-- Payment options (PayPal or card) -->
+    <div class="container mt-3">
+        <div class="card mt-3">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-3">
+                            <button type="submit" class="btn btn-primary">Select</button>
+                        </div>
+                        <div class="col">
+                            <p>Enter Card Details</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-3">
+                            <button type="submit" class="btn btn-primary">Select</button>
+                        </div>
+                        <div class="col">
+                            <p>Use PayPal <img src="/img/paypal-logo.svg" width="20" height="20" alt="PayPal logo"></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="container mt-5">
+        <hr>
+    </div>
+
+    <!-- Card details title -->
+    <div class="container mt-3">
+        <h5>Enter Card Details</h5>
+    </div>
+
+    <!-- Form -->
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name on Card" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="number" placeholder="Enter Card Number" required>
+                    </div>
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" id="expiry" placeholder="Enter Expiry Date" required>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="cvv" placeholder="Enter CVV Number" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="postcode" placeholder="Enter Postcode" required>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <button type="submit" class="btn btn-primary w-100">Continue</button>
+
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                        <a class="btn btn-secondary w-100" href="bookingsuccessful.html" role="button">Demo Continue</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

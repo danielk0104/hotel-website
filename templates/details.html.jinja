@@ -1,0 +1,43 @@
+{% extends "partials/base1.jinja" %}
+{% block title %}Enter Details - Hotel Booking App{% endblock %}
+{% block content %}
+
+    <!-- Title -->
+    <div class="container mt-3">
+        <h3>Enter Details</h3>
+    </div>
+
+    <!-- Divider -->
+    <div class="container">
+        <hr>
+    </div>
+
+    <!-- Form -->
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="address" placeholder="Enter Address" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email Address" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="tel" class="form-control" id="number" placeholder="Enter Mobile Number" required>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <button type="submit" class="btn btn-primary w-100">Continue</button>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                        <a class="btn btn-secondary w-100" href="payment.html" role="button">Demo Continue</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

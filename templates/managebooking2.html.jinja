@@ -1,0 +1,31 @@
+{% extends "partials/base1.jinja" %}
+{% from 'partials/macros.jinja' import popup %}
+{% block title %}Manage Booking - Hotel Booking App{% endblock %}
+{% block content %}
+
+    <!-- Title -->
+    <div class="container text-center mt-3">
+        <h3>Manage Booking</h3>
+    </div>
+    
+    <!-- Booking card -->
+    <div class="container my-3">
+        {{ card1("Name", "Address", "", "", "", "", "B&B or All Inclusive", "X.XX") }}
+    </div>
+
+    <!-- Buttons for cancel and edit -->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary w-100" data-toggle="modal" data-target="#confirmCancel">Cancel</button>
+            </div>
+            <div class="col">
+                <a class="btn btn-primary w-100" href="editbooking.html" role="button">Change Booking</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup -->
+    {{ popup("confirmCancel", "Are you sure you would like to cancel your stay at xx hotel on xx/xx/xxxx?", "Yes", "No", "cancel.html") }}
+
+{% endblock %}

@@ -1,0 +1,90 @@
+<!-- Daniel Khoury W24011169 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Manage Booking - Hotel Booking App</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <!-- Navigation bar -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img class="img-fluid" src="/img/hotel-logo.svg" width="30" height="30" alt="Hotel Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="deals.html">Deals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="managebooking.html">Manage Booking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+        
+
+    <!-- Title -->
+    <div class="container text-center mt-3">
+        <h3>Manage Booking</h3>
+    </div>
+
+    <!-- Form -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <p><small class="text-muted">Please enter:</small></p>
+                <form>
+                    <div class="mb-3">
+                        <label for="number" class="form-label">Booking Reference Number:</label>
+                        <input type="text" class="form-control" id="number" placeholder="Enter your Booking Reference Number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Surname:</label>
+                        <input type="text" class="form-control" id="password" placeholder="Enter your Surname" required>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                        <button type="submit" class="btn btn-primary w-100">Enter</button>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                        <a class="btn btn-secondary w-100" href="managebooking2.html" role="button">Demo Enter</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <footer class="mt-5">
+        <div class="container">
+            <p>Hotel Booking App 2025</p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

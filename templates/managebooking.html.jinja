@@ -1,0 +1,35 @@
+{% extends "partials/base1.jinja" %}
+{% block title %}Manage Booking - Hotel Booking App{% endblock %}
+{% block content %}
+
+    <!-- Title -->
+    <div class="container text-center mt-3">
+        <h3>Manage Booking</h3>
+    </div>
+
+    <!-- Form -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <p><small class="text-muted">Please enter:</small></p>
+                <form>
+                    <div class="mb-3">
+                        <label for="number" class="form-label">Booking Reference Number:</label>
+                        <input type="text" class="form-control" id="number" placeholder="Enter your Booking Reference Number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Surname:</label>
+                        <input type="text" class="form-control" id="password" placeholder="Enter your Surname" required>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                        <button type="submit" class="btn btn-primary w-100">Enter</button>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                        <a class="btn btn-secondary w-100" href="managebooking2.html" role="button">Demo Enter</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

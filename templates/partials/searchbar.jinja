@@ -1,0 +1,37 @@
+<!-- Search bar -->
+<form>
+    <div class="row">
+        <div class="col">
+            <input class="form-control form-control-lg" type="search" placeholder="Enter Place">
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col">
+            <select class="form-control">
+                <option>Choose Date...</option>
+
+                {% for date in dates %}
+
+                <option>{{date.available}}</option>
+
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col">
+            <select class="form-control">
+                <option>No. of People...</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+            </select>
+        </div>
+    </div>
+    <div class="text-center mt-2">
+        <a class="btn btn-primary w-100" href="searchresults.html" role="button">Search</a>
+    </div>
+</form>

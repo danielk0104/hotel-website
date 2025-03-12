@@ -1,0 +1,33 @@
+{% extends "partials/base1.jinja" %}
+{% from 'partials/macros.jinja' import image1 %}
+{% from 'partials/macros.jinja' import image2 %}
+{% block title %}Home - Hotel Booking App{% endblock %}
+{% block content %}
+
+    <!-- Include the searchbar -->
+    <div class="container mt-3">
+        {% include 'partials/searchbar.jinja' %}
+    </div>
+
+    <!-- 1st jumbotron -->
+    <div class="container mt-3">
+        <div class="jumbotron text-center">
+            {{ image1("Take a look at our rooms", "Hdud hgasdiags huihd huldd bsaih eofdh busdhi hsjadgi wugd", "/img/hotel-room-5.webp", "View Photos >", "aboutus.html/#Rooms") }}
+        </div>
+    </div>
+
+    <!-- 2nd jumbotron -->
+    <div class="container mt-3">
+        <div class="jumbotron text-center">
+            {{ image2("Our Locations", "Hdud hgasdiags huihd huldd bsaih eofdh busdhi hsjadgi wugd", "/img/hotel-room-2.jpeg", "View List >", "aboutus.html/#Locations") }}
+        </div>
+    </div>
+
+    <!-- 3rd jumbotron -->
+    <div class="container my-3">
+        <div class="jumbotron text-center">
+            {{ image1("Food and Drink", "Hdud hgasdiags huihd huldd bsaih eofdh busdhi hsjadgi wugd", "/img/hotel-room-3.webp", "View More >", "aboutus.html/#FoodandDrink") }}
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "partials/base1.jinja" %}
+{% from 'partials/macros.jinja' import image1 %}
+{% from 'partials/macros.jinja' import carousel1 %}
+{% block title %}About Us - Hotel Booking App{% endblock %}
+{% block content %}
+
+    <!-- Title -->
+    <div class="container text-center mt-3">
+        <h3>About Us</h3>
+    </div>
+
+    <!-- Long image and descriptive text -->
+    <div class="container text-center mt-3">
+        <img class="img-fluid rounded" src="/img/hotel-room-4.webp" alt="Hotel room">
+        <p class="mt-3">Hdud hgasdiags huihd huIdd bsaih eofdh busdhi hsjadgi wugd jsaidoh hfuaf hfeoihfo hfbaduihfu ihfoiadehf</p>
+    </div>
+
+    <!-- Food and drink jumbotron -->
+    <div class="container mt-3" id="FoodandDrink">
+        <div class="jumbotron text-center">
+            <h4>Food and Drink</h4>
+            {{ image1("", "Hdud hgasdiags huihd huIdd bsaih eofdh busdhi hsjadgi wugd jsaidoh", "/img/hotel-room-2.jpeg", "", "") }}
+            <p>Hdud hgasdiags huihd huIdd bsaih eofdh busdhi hsjadgi wugd jsaidoh hfuaf hfeoihfo hfbaduihfu ihfoiadehf</p>
+        </div>
+    </div>
+
+    <!-- 'Our Rooms' carousel -->
+    <div class="container text-center mt-3" id="Rooms">
+        <h4>Our Rooms</h4>
+        {{ carousel1("/img/hotel-room-7.jpg", "/img/hotel-room-2.jpeg", "/img/hotel-room-3.webp") }}
+    </div>
+
+    <!-- Locations jumbotron -->
+    <div class="container my-5" id="Locations">
+        <div class="jumbotron text-center">
+            <h4>Our Locations</h4>
+            <button type="submit" class="btn btn-primary mt-3">Click to scroll</button>
+            <p class="mt-3">Hdud hgasdiags huihd huIdd bsaih eofdh busdhi hsjadgi wugd jsaidoh hfuaf hfeoihfo hfbaduihfu ihfoiadehf</p>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "partials/base1.jinja" %}
+{% from 'partials/macros.jinja' import card1 %}
+{% block title %}Payment - Hotel Booking App{% endblock %}
+{% block content %}
+
+    <!-- Title -->
+    <div class="container text-center mt-3">
+        <h3>Booking Successful!</h3>
+    </div>
+
+    <!-- Long image -->
+    <div class="container mt-3">
+        <img class="img-fluid rounded" src="/img/hotel-room-8.webp" alt="Hotel room">
+    </div>
+
+    <!-- Booking info -->
+    <div class="container mt-4">
+        <h5>Booking Info</h5>
+        <p>Reference Number</p>
+    </div>
+
+    <!-- Booking card -->
+    <div class="container my-3">
+        {{ card1("Name", "Address", "", "", "", "", "B&B or All Inclusive", "X.XX") }}
+    </div>
+
+{% endblock %}

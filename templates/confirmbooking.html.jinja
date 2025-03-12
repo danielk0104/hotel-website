@@ -1,0 +1,21 @@
+{% extends "partials/base1.jinja" %}
+{% from 'partials/macros.jinja' import card1 %}
+{% block title %}Confirm Booking - Hotel Booking App{% endblock %}
+{% block content %}
+
+    <!-- Title -->
+    <div class="container mt-3">
+        <h3>Confirm Booking</h3>
+    </div>
+
+    <!-- Booking card -->
+    <div class="container mt-3">
+        {{ card1("Name", "Address", "", "", "", "", "B&B or All Inclusive", "X.XX") }}
+    </div>
+
+    <!-- Continue button -->
+    <div class="container text-center my-3">
+        <a class="btn btn-primary w-100" href="details.html" role="button">Continue</a>
+    </div>
+
+{% endblock %}

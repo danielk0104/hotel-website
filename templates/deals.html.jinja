@@ -1,0 +1,33 @@
+{% extends "partials/base1.jinja" %}
+{% from 'partials/macros.jinja' import deal %}
+{% block title %}Deals - Hotel Booking App{% endblock %}
+{% block content %}
+
+    <!-- Title -->
+    <div class="container text-center mt-3">
+        <h3>Hottest Deals This Week</h3>
+    </div>
+
+    <!-- List all locations with deals active -->
+    {% for location in locations %}
+    <div class="container my-5">
+        {% if location.deal %}
+            <img class="img-fluid rounded" src={{location.longimage}} alt="Hotel room">
+            <div class="row mt-2">
+                <div class="col-5">
+                    <h5>{{location.name}}</h5>
+                </div>
+                <div class="col">
+                    <h5>{{location.loc}}</h5>
+                </div>
+                <div class="col">
+                    <h5>{{location.price}}</h5>
+                </div>
+            </div>
+            <p class="text-center">{{location.desc}}</p>
+            <a href="hotelpage.html">Book Now ></a>
+        {% endif %}
+    </div>
+    {% endfor %}
+
+{% endblock %}

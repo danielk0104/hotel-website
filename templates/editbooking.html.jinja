@@ -1,0 +1,25 @@
+{% extends "partials/base1.jinja" %}
+{% from 'partials/macros.jinja' import card2 %}
+{% from 'partials/macros.jinja' import popup %}
+{% block title %}Edit Booking - Hotel Booking App{% endblock %}
+{% block content %}
+
+    <!-- Title -->
+    <div class="container mt-3">
+        <h3>Edit Booking</h3>
+    </div>
+
+    <!-- Edit booking card -->
+    <div class="container my-3">
+        {{ card2("Name", "Address", "", "", "", "", "B&B or All Inclusive", "X.XX") }}
+    </div>
+
+    <!-- Confirm button -->
+    <div class="container">
+        <button type="button" class="btn btn-primary w-100" data-toggle="modal" data-target="#confirmChange">Confirm</button>
+    </div>
+
+    <!-- Popup -->
+    {{ popup("confirmChange", "You are wanting to change xxxx to xxxx. Is this correct?", "Yes", "No", "bookingchanged.html") }}
+
+{% endblock %}

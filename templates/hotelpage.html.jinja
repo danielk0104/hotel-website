@@ -1,0 +1,103 @@
+{% extends "partials/base1.jinja" %}
+{% from 'partials/macros.jinja' import carousel1 %}
+{% block title %}Hotel - Hotel Booking App{% endblock %}
+{% block content %}
+
+    <!-- Name and price -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col text-left">
+                <h5>Name</h5>
+            </div>
+            <div class="col text-right">
+                <h5>Price</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel with description -->
+    <div class="container mt-3" id="Rooms">
+        {{ carousel1("/img/hotel-room-7.jpg", "/img/hotel-room-2.jpeg", "/img/hotel-room-3.webp") }}
+        <p class="text-center mt-3">Hdud hgasdiags huihd huIdd bsaih eofdh busdhi hsjadgi wugd jsaidoh hfuaf hfeoihfo hfbaduihfu ihfoiadehf</p>
+        <a class="text-left" href="#">Reviews ></a>
+    </div>
+
+    <!-- Map -->
+    <div class="container text-center mt-3">
+        <h5>Map</h5>
+        <img src="/img/map-location.png" class="d-block w-100 rounded mt-3" alt="Map">
+    </div>
+
+    <!-- B&B/all inclusive -->
+    <div class="container mt-3">
+        <div class="card mb-3">
+            <div class="row">
+
+                <div class="col text-left">
+                    <div class="card-body">
+                        <p class="card-text">Bed & Breakfast</p>
+                    </div>
+                </div>
+
+                <div class="col text-right">
+                    <div class="card-body no-gutters">
+                        <button type="submit" class="btn btn-primary">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="w-100"></div>
+
+                <div class="col text-left">
+                    <div class="card-body">
+                        <p class="card-text">All Inclusive</p>
+                    </div>
+                </div>
+
+                <div class="col text-right">
+                    <div class="card-body">
+                        <button type="submit" class="btn btn-primary">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking details -->
+    <div class="container my-3">
+        <div class="card mt-3">
+            <div class="card-header">
+                <h5>Book Now</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col text-left">
+                            <p>Nights</p>
+                            <p>XX nights</p>
+                            <p>B&B / all inclusive</p>
+                        </div>
+                        <div class="col text-right">
+                            <p>Price</p>
+                            <p>x.xx</p>
+                            <p>x.xx</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col text-left">
+                            <p>Total</p>
+                        </div>
+                        <div class="col text-right">
+                            <p>x.xx</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="card-footer text-center">
+                <a class="btn btn-primary w-100" href="confirmbooking.html" role="button">Book</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
