@@ -1,0 +1,122 @@
+{
+    "dates": [
+        {
+            "available": "12th February"
+        },
+        {
+            "available": "28th February"
+        },
+        {
+            "available": "6th June"
+        },
+        {
+            "available": "30th July"
+        },
+        {
+            "available": "2nd August"
+        },
+        {
+            "available": "26th August"
+        },
+        {
+            "available": "26th September"
+        },
+        {
+            "available": "5th October"
+        },
+        {
+            "available": "19th December"
+        }
+    ],
+
+    "locations": [
+        {
+            "name": "Freeport Hotel",
+            "loc": "Lugwinton",
+            "price": "£231",
+            "desc": "Hdud hgasdiags huihd huIdd bsaih eofdh busdhi hsjadgi wugd jsaidoh hfuaf hfeoihfo hfbaduihfu ihfoiadehf",
+            "deal": "",
+            "image1": "/img/hotel-room-2.jpeg",
+            "image2": "/img/hotel-room-7.jpg",
+            "image3": "/img/hotel-room-3.webp",
+            "longimage": "/img/hotel-room-4.webp"
+        },
+        {
+            "name": "Jameson Resort",
+            "loc": "Stonecreek",
+            "price": "£601",
+            "desc": "Hdud hgasdiags huihd huIdd bsaih eofdh busdhi hsjadgi wugd jsaidoh hfuaf hfeoihfo hfbaduihfu ihfoiadehf",
+            "deal": "True",
+            "image1": "/img/hotel-room-3.webp",
+            "image2": "/img/hotel-room-5.webp",
+            "image3": "/img/hotel-room-7.jpg",
+            "longimage": "/img/hotel-room-8.webp"
+        },
+        {
+            "name": "The Marketplace Hotel & Spa",
+            "loc": "Lugwinton",
+            "price": "£476",
+            "desc": "Hdud hgasdiags huihd huIdd bsaih eofdh busdhi hsjadgi wugd jsaidoh hfuaf hfeoihfo hfbaduihfu ihfoiadehf",
+            "deal": "True",
+            "image1": "/img/hotel-room-5.webp",
+            "image2": "/img/hotel-room-2.jpeg",
+            "image3": "/img/hotel-room-3.webp",
+            "longimage": "/img/hotel-room-9.webp"
+        },
+        {
+            "name": "Ambleside Resort",
+            "loc": "Stonecreek",
+            "price": "£376",
+            "desc": "Hdud hgasdiags huihd huIdd bsaih eofdh busdhi hsjadgi wugd jsaidoh hfuaf hfeoihfo hfbaduihfu ihfoiadehf",
+            "deal": "",
+            "image1": "/img/hotel-room-2.jpeg",
+            "image2": "/img/hotel-room-5.webp",
+            "image3": "/img/hotel-room-6.jpeg",
+            "longimage": "/img/hotel-room-9.webp"
+        },
+        {
+            "name": "Thornwick Castle Hotel",
+            "loc": "Lugwinton",
+            "price": "£784",
+            "desc": "Hdud hgasdiags huihd huIdd bsaih eofdh busdhi hsjadgi wugd jsaidoh hfuaf hfeoihfo hfbaduihfu ihfoiadehf",
+            "deal": "",
+            "image1": "/img/hotel-room-6.jpeg",
+            "image2": "/img/hotel-room-5.webp",
+            "image3": "/img/hotel-room-3.webp",
+            "longimage": "/img/hotel-room-10.webp"
+        },
+        {
+            "name": "Paradise Motel",
+            "loc": "Stonecreek",
+            "price": "£146",
+            "desc": "Hdud hgasdiags huihd huIdd bsaih eofdh busdhi hsjadgi wugd jsaidoh hfuaf hfeoihfo hfbaduihfu ihfoiadehf",
+            "deal": "True",
+            "image1": "/img/hotel-room-7.jpg",
+            "image2": "/img/hotel-room-2.jpeg",
+            "image3": "/img/hotel-room-6.jpeg",
+            "longimage": "/img/hotel-room-10.webp"
+        },
+        {
+            "name": "Muse Motel",
+            "loc": "Stonecreek",
+            "price": "£129",
+            "desc": "Hdud hgasdiags huihd huIdd bsaih eofdh busdhi hsjadgi wugd jsaidoh hfuaf hfeoihfo hfbaduihfu ihfoiadehf",
+            "deal": "",
+            "image1": "/img/hotel-room-6.jpeg",
+            "image2": "/img/hotel-room-5.webp",
+            "image3": "/img/hotel-room-3.webp",
+            "longimage": "/img/hotel-room-8.webp"
+        },
+        {
+            "name": "Aluring Resort",
+            "loc": "Stonecreek",
+            "price": "£551",
+            "desc": "Hdud hgasdiags huihd huIdd bsaih eofdh busdhi hsjadgi wugd jsaidoh hfuaf hfeoihfo hfbaduihfu ihfoiadehf",
+            "deal": "True",
+            "image1": "/img/hotel-room-3.webp",
+            "image2": "/img/hotel-room-7.jpg",
+            "image3": "/img/hotel-room-6.jpeg",
+            "longimage": "/img/hotel-room-4.webp"
+        }
+    ]
+}
